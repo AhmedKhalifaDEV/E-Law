@@ -1,0 +1,400 @@
+:root {
+  --Body_color: #e9e5dc;
+  --sub-color: #eac059;
+  --full_width: 100%;
+  --slider_height: 80%;
+  --font-size: 16px;
+  --slider-opacity: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--Body_color);
+}
+
+/* Start of header part 1 */
+
+.sticky {
+  position: sticky; /* Also it could be >--> position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 35%;
+}
+
+.slogan {
+  width: 15%;
+  position: absolute;
+  margin: 1% auto;
+}
+
+.vision img {
+  height: 8vh;
+  width: auto;
+}
+
+.lang svg {
+  background-color: rgb(199, 198, 198);
+}
+
+/* End of header part 1 */
+
+/* Start of header part 2 */
+.navbar {
+  z-index: +1;
+}
+
+.navbar-nav {
+  margin-bottom: 7%;
+  font-size: calc(var(--font-size) + 5px);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-dark .navbar-nav .bottom.active,
+.navbar-dark .navbar-nav .show > .bottom {
+  /* to make the active nav word "home" is higlighted by defult and we get the class name from -inspect elements -- style section down */
+
+  color: #000;
+  background-color: var(--sub-color);
+}
+
+.navbar-dark .navbar-nav .bottom,
+.navbar-dark .navbar-nav .show > .bottom {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .bottom:hover {
+  background: var(--sub-color);
+  color: #000;
+  transition: 1s all ease-in-out;
+}
+
+.dropdown .dropdown-menu {
+  background-color: rgb(22, 14, 14);
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  color: chocolate;
+}
+
+/*start signin/signup anchor*/
+
+.div-signin-signup {
+  margin-top: 80px;
+}
+
+.div-signin-signup a {
+  background-color: black;
+  color: var(--sub-color);
+  text-decoration: none;
+  border: 1px solid var(--sub-color);
+}
+
+.div-signin-signup a:hover {
+  background-color: #eac059;
+  color: black;
+  transition: 0.5s all ease-in-out;
+  border: 0px;
+}
+/*end signin/signup anchor*/
+
+/* End of header part 2 */
+
+/* START OF SEARCH BAR */
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 50px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: cornsilk;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 30px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 5px;
+  width: 250px;
+  caret-color: #eac059;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: #e9e5dc;
+  color: black;
+}
+
+.search_icon {
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+/*SEARCH BAR ENDS*/
+
+/* End of Header */
+
+/* Main Slider Starts */
+
+.slider {
+  position: relative;
+  background-color: #000;
+}
+
+.caption {
+  background: var(--slider-opacity);
+  height: 20vh;
+}
+
+.caption .button {
+  color: whitesmoke;
+}
+
+.caption .button:hover {
+  color: #000;
+  background-color: var(--Body_color);
+  transition: 0.5s all ease-in-out;
+}
+
+.icon {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  padding-left: 1%;
+}
+
+/* Main Slider Ends */
+
+/* News cards Starts */
+
+.logo2 img {
+  height: auto;
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.logo2 h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: chocolate;
+  text-align: center;
+  margin-bottom: -14.5px;
+}
+
+.news-container {
+  width: 85%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.cards {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+  height: 145px;
+  width: 355px;
+  background-color: red;
+}
+.cards .img-one {
+  background-image: url("../pics/news/news1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-two {
+  background-image: url("../pics/news/news2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-three {
+  background-image: url("../pics/news/news3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-four {
+  background-image: url("../pics/news/news4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-five {
+  background-image: url("../pics/news/news5.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-six {
+  background-image: url("../pics/news/news6.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.content h3 {
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content p {
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.content a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  background-color: var(--sub-color);
+  padding: 8px 15px;
+}
+
+.content a:hover {
+  background-color: #d46619;
+  color: #333;
+  transition: 1s ease;
+}
+/* start of what we provide */
+
+.logo3 {
+  margin-top: 20px;
+}
+
+.logo3 h6 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: chocolate;
+  text-align: center;
+  margin-bottom: -14.5px;
+  font-weight: 500;
+}
+
+.logo3 h2 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: black;
+  text-align: center;
+  margin-top: -6.5px;
+  font-weight: 700;
+}
+
+.cards2 {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  height: 350px;
+}
+
+.cards2 i {
+  font-size: 45px;
+  margin-top: 35px;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+.content2 {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.content2 h3 {
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.content2 p {
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.content2 a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  background-color: var(--sub-color);
+  padding: 8px 15px;
+}
+
+.content2 a:hover {
+  background-color: #d46619;
+  color: #333;
+  transition: 1s ease;
+}
+
+/* start of footer */
+footer {
+  background: linear-gradient(rgba(34, 51, 85, 0.8), rgba(34, 51, 85, 0.8));
+  width: var(--full_width);
+  height: auto;
+  color: white;
+  border: none;
+  position: relative;
+  padding-bottom: 1%;
+}
+
+.footer-aast {
+  width: 13%;
+}
+
+.footer-img2 {
+  position: absolute;
+  width: 11%;
+  margin: 4% 45% 1% 45%;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-nav {
+  padding: 1% 2%;
+}
+
+.bottom-nav ul {
+  border-bottom: 2px solid var(--Body_color);
+  border-width: 10%;
+}

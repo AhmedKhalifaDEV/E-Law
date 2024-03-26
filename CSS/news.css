@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+/* START OF NEWS */
+
+.row {
+  margin: 5% auto 5%;
+}
+
+.row .title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+.row .picture img {
+  width: 20%;
+}
+
+.row .news {
+  width: 100%;
+  margin: 3% auto 3%;
+}
+
+.row .news .headline {
+  width: 70%;
+  margin-left: 2%;
+  color: #5f7030;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  border-bottom: 2px dotted #5f7030;
+}
